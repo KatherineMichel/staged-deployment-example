@@ -67,6 +67,10 @@ Fork the App
 
     $ Placeholder
 
+Add Public Key (if needed for staging)
+
+    $ heroku keys:add
+
 ## Staging and Production Site Examples
 
 Staging URL
