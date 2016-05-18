@@ -10,9 +10,12 @@ Python, pip, and Django should be installed globally, as well as Heroku Toolbelt
 
     $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile projectname repo-name
 
-Change directory, install requirements, and run server
+Change directory
 
     $ cd repo-name
+
+At this point, it's strongly recommended that you create and activate a virtualenv of some type. Afterward, install requirements, and run server. 
+
     $ pip install -r requirements.txt
     $ python manage.py runserver 
     
