@@ -59,3 +59,17 @@ Push changes (checkout as needed)
     $ git push heroku master
 
     $ heroku run python manage.py migrate
+
+Fork the App
+
+    $ Placeholder
+
+## Staging and Production Site Examples
+
+Staging URL
+
+    https://staged-deployment-example-staging.herokuapp.com
+
+Production URL
+
+    https://staged-deployment-example.herokuapp.com
