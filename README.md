@@ -4,7 +4,7 @@ Created using [Heroku Django Template](https://github.com/heroku/heroku-django-t
 
 ## Example Instructions
 
-### Create Project Locally and Push to GitHub master and development Branches
+### Create Project Locally and Push to GitHub master branch
 
 Python, pip, and Django should be installed globally, as well as Heroku Toolbelt. Create a GitHub repo and clone locally, but do not cd into the directory. Run this command in the parent directory (You can replace "projectname" with your desired project name; replace repo-name with the name of the GitHub repo you have cloned locally.):
 
@@ -29,10 +29,12 @@ Push to GitHub master branch
 
     $ git push origin master
 
-Create local development branch and push to GitHub development branch
+### Create Local development Branch and Create/Push to GitHub development Branch
 
     $ git checkout -b development
     $ git push origin development
+
+### Update GitHub Updates to Local Branches and Merge Changes Between development and master Branches
 
 Pull changes
 
