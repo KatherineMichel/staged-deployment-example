@@ -32,30 +32,6 @@ Push to GitHub master branch
 
     $ git push origin master
 
-### Create Local development Branch and Create/Push to GitHub development Branch
-
-    $ git checkout -b development
-    $ git push origin development
-
-### Merge Changes Between development and master Branches, Push and Pull Between GitHub and Local Branches
-
-Merge changes
-
-    $ git checkout master
-    $ git merge development (merge local development branch changes into local master branch)
-    $ git checkout development
-    $ git merge master (merge local master branch changes into local development branch)
-
-Pull changes (checkout as needed)
-
-    $ git pull origin master
-    $ git pull origin development
-
-Push changes (checkout as needed)
-
-    $ git push origin master
-    $ git push origin development
-
 ## Deploy to Heroku Staging and Production Websites
 
     $ heroku create app-name
@@ -79,25 +55,17 @@ Alternatively
 
     $ git remote add forked https://git.heroku.com/app-named-staging.git
 
-Open Staging or Production Sites
+Open Staging or Production Sites in Browser
 
     $ heroku open --app app-name
     $ heroku open --remote forked
 
-If development Branch Does Not Already Exist
+Create local development Branch, Push to Staging Site, Create/Push to GitHub development Branch
 
     $ git checkout -b development 
-    $ heroku keys:add
+    $ heroku keys:add (if needed due to publickeys error)
     $ git push forked master
-
-Otherwise
-
-    $ git checkout development 
-    $ git push forked master
-
-Add Public Key (if needed for staging)
-
-    $ heroku keys:add
+    $ git push origin development
 
 ## Staging and Production Site Examples
 
@@ -108,3 +76,24 @@ Staging URL
 Production URL
 
     https://staged-deployment-example.herokuapp.com
+
+### Merge Changes Between development and master Branches, Push and Pull Between GitHub and Local Branches
+
+Merge changes from development branch into master branch and push to GitHub master branch
+
+    $ git checkout master
+    $ git merge development (merge local development branch changes into local master branch)
+    $ git push origin master
+    $ git push heroku master
+
+Merge changes from master branch into development branch and push to GitHub development branch and Heroku staging site
+
+    $ git checkout development
+    $ git merge master (merge local master branch changes into local development branch)
+    $ git push origin development
+    $ git push forked master
+
+Pull changes (checkout as needed)
+
+    $ git pull origin master
+    $ git pull origin development
