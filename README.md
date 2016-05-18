@@ -48,9 +48,9 @@ Merge changes
     $ git checkout development
     $ git merge master (merge local master branch changes into local development branch)
 
-## Deployment to Heroku
+## Deploy to Heroku Staging and Production Websites
 
-    $ heroku create
+    $ heroku create app-name
     $ git push heroku master
 
     $ heroku run python manage.py migrate
