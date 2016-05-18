@@ -34,12 +34,7 @@ Push to GitHub master branch
     $ git checkout -b development
     $ git push origin development
 
-### Update GitHub Updates to Local Branches and Merge Changes Between development and master Branches
-
-Pull changes
-
-    $ git pull origin master
-    $ git pull origin development
+### Merge Changes Between development and master Branches, Push and Pull Between GitHub and Local Branches
 
 Merge changes
 
@@ -47,6 +42,16 @@ Merge changes
     $ git merge development (merge local development branch changes into local master branch)
     $ git checkout development
     $ git merge master (merge local master branch changes into local development branch)
+
+Pull changes (checkout as needed)
+
+    $ git pull origin master
+    $ git pull origin development
+
+Push changes (checkout as needed)
+
+    $ git push origin master
+    $ git push origin development
 
 ## Deploy to Heroku Staging and Production Websites
 
