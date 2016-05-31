@@ -14,7 +14,7 @@ Change directory
 
     $ cd repo-name
 
-At this point, it's strongly recommended that you create and activate a virtualenv of some type. Afterward, install requirements, and run server. 
+At this point, it's strongly recommended that you create and activate a virtualenv of some type. Afterward, install requirements, and run server. (migrate?)
 
     $ pip install -r requirements.txt
     $ python manage.py runserver 
