@@ -39,7 +39,7 @@ Push to GitHub master branch
 
 Migrate and Open Heroku App in Browser
 
-    $ heroku run python manage.py migrate
+    $ heroku run python manage.py migrate (does this need to be run again for forked app?)
     $ heroku open 
 
 Fork the App
