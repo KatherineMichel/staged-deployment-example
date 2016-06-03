@@ -82,7 +82,7 @@ Production URL
 Merge changes from development branch into master branch
 
     $ git checkout master
-    $ git merge development (merge local development branch changes into local master branch)
+    $ git merge development -m "Message" (merge local development branch changes into local master branch)
  
 Add and commit files, with message
 
@@ -97,7 +97,7 @@ Push to GitHub master branch and Heroku master branch
 Merge changes from master branch into development branch
 
     $ git checkout development
-    $ git merge master (merge local master branch changes into local development branch)
+    $ git merge master  -m "Message" (merge local master branch changes into local development branch)
 
 Add and commit files, with message
 
