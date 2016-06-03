@@ -71,11 +71,11 @@ Create local development Branch, Push to Staging Site, Create/Push to GitHub dev
 
 Staging URL
 
-    https://staged-deployment-example-s.herokuapp.com
+    https://deployment-example-staging.herokuapp.com
 
 Production URL
 
-    https://staged-deployment-example.herokuapp.com
+    https://deployment-example.herokuapp.com
 
 ### Merge Changes Between development and master Branches, Push and Pull Between GitHub and Local Branches
 
