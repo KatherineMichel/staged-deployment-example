@@ -55,6 +55,11 @@ Alternatively
 
     $ git remote add forked https://git.heroku.com/app-named-staging.git
 
+Heroku Remotes in Repo
+
+    heroku          (app-name)
+    forked          (app-name-staging)
+
 Open Staging or Production Sites in Browser
 
     $ heroku open --app app-name
@@ -76,6 +81,14 @@ Staging URL
 Production URL
 
     https://deployment-example.herokuapp.com
+
+To Change URL
+
+    $ heroku apps:rename new-name --remote forked
+
+Or
+
+    $ heroku apps:rename new-name --app old-name
 
 ### Merge Changes Between development and master Branches, Push and Pull Between GitHub and Local Branches
 
