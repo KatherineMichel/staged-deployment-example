@@ -23,7 +23,7 @@ Check that the Django welcome page appears
 
     http://127.0.0.1:8000
 
-Add and commit files
+Add and commit files, with message
 
     $ git add -A
     $ git commit -m "Message"
@@ -79,19 +79,40 @@ Production URL
 
 ### Merge Changes Between development and master Branches, Push and Pull Between GitHub and Local Branches
 
-Merge changes from development branch into master branch and push to GitHub master branch
+Merge changes from development branch into master branch
 
     $ git checkout master
     $ git merge development (merge local development branch changes into local master branch)
+ 
+Add and commit files, with message
+
+    $ git add -A
+    $ git commit -m "Message" 
+
+Push to GitHub master branch and Heroku master branch
+
     $ git push origin master
     $ git push heroku master
 
-Merge changes from master branch into development branch and push to GitHub development branch and Heroku staging site
+Merge changes from master branch into development branch
 
     $ git checkout development
     $ git merge master (merge local master branch changes into local development branch)
+
+Add and commit files, with message
+
+    $ git add -A
+    $ git commit -m "Message" 
+
+Push to GitHub development branch and Heroku forked master (staging site)
+
     $ git push origin development
     $ git push forked master
+
+To Escape Git Message, if needed
+
+    ESC
+    $ :wq
 
 Pull changes (checkout as needed)
 
