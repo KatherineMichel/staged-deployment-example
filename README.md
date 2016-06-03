@@ -74,20 +74,17 @@ Create local development Branch, Push to Staging Site, Create/Push to GitHub dev
 
 ## Staging and Production Site Examples
 
-Staging URL
+[Staging URL](https://deployment-example-staging.herokuapp.com)
 
     https://deployment-example-staging.herokuapp.com
 
-Production URL
+[Production URL](https://deployment-example.herokuapp.com)
 
     https://deployment-example.herokuapp.com
 
-To Change URL
+Two ways to Change URL
 
     $ heroku apps:rename new-name --remote forked
-
-Or
-
     $ heroku apps:rename new-name --app old-name
 
 ### Merge Changes Between development and master Branches, Push and Pull Between GitHub and Local Branches
